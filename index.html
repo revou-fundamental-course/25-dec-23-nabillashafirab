@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Kalkulator Segitiga</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="."> Kalkulator Segitiga </a>
+      <nav>
+        <a href="#luas-segitiga">Luas<br />Segitiga</a>
+        <a href="#keliling-segitiga">Keliling<br />Segitiga</a>
+      </nav>
+    </header>
+    <main>
+      <section class="info">
+        <h1>Halo Teman!</h1>
+        <h2>Selamat Datang di Kalkulator Segitiga!</h2>
+        <p>Di sini, kamu bisa menghitung luas ataupun keliling segitiga</p>
+      </section>
+      <section class="kalkulator">
+        <form action="/submit" method="post">
+          <fieldset id="luas-segitiga">
+            <legend>Luas Segitiga</legend>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Regular_triangle.svg/800px-Regular_triangle.svg.png"
+            />
+            <ul>
+              <li>
+                <label for="tinggi">Tinggi:</label>
+                <input
+                  type="number"
+                  id="tinggi"
+                  name="tinggi"
+                  placeholder="0"
+                  min="0"
+                  required
+                />
+              </li>
+
+              <li>
+                <label for="alas">Alas:</label>
+                <input
+                  type="number"
+                  id="alas"
+                  name="alas"
+                  placeholder="0"
+                  min="0"
+                  required
+                />
+              </li>
+              <li id="hasil-luas">Luas segitiga adalah:</li>
+              <li class="button">
+                <input type="reset" value="Reset" />
+                <input
+                  type="submit"
+                  value="Submit"
+                  onclick="event.preventDefault(); console.log(hitungLuas());"
+                />
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+        <form action="/submit" method="post">
+          <fieldset id="keliling-segitiga">
+            <legend>Keliling Segitiga</legend>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Regular_triangle.svg/800px-Regular_triangle.svg.png"
+            />
+            <ul>
+              <li>
+                <label for="sisi1">Sisi 1:</label>
+                <input
+                  type="number"
+                  id="sisi1"
+                  name="sisi1"
+                  placeholder="0"
+                  min="0"
+                  required
+                />
+              </li>
+              <li>
+                <label for="sisi2">Sisi 2:</label>
+                <input
+                  type="number"
+                  id="sisi2"
+                  name="sisi2"
+                  placeholder="0"
+                  min="0"
+                  required
+                />
+              </li>
+              <li>
+                <label for="sisi3">Sisi 3:</label>
+                <input
+                  type="number"
+                  id="sisi3"
+                  name="sisi3"
+                  placeholder="0"
+                  min="0"
+                  required
+                />
+              </li>
+              <li id="hasil-keliling">Keliling segitiga adalah:</li>
+              <li>
+                <input type="reset" value="Reset" />
+                <input
+                  type="submit"
+                  value="Submit"
+                  onclick="event.preventDefault(); console.log(hitungKeliling());"
+                />
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
