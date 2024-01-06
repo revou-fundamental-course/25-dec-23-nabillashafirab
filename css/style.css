@@ -33,25 +33,31 @@ a{
     border-radius: 5px;
     color: #125275;
 }
-.kalkulator{
+/* .kalkulator{
     display: flex;
     justify-content: flex-start;
-}
+} */
 fieldset{
     margin: 15px 10px;
     border-color: #E8C256;
     border-radius: 7px;
-    display: grid;
+    display: flex;
+    justify-content: flex-start;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
-    justify-content: center;
+    justify-content: center; */
 }
 fieldset > legend{
     font-weight: bold;
 }
-img{
+/* img{
     width: 200px;
     height: 200px;
+} */
+img{
+    width: 100px;
+    height: 100px;
 }
 ul{
     padding: 3px 5px;
