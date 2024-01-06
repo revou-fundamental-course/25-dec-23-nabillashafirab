@@ -39,18 +39,15 @@ fieldset{
     border-color: #E8C256;
     border-radius: 7px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 fieldset > legend{
     font-weight: bold;
 }
-/* img{
-    width: 200px;
-    height: 200px;
-} */
+
 img{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 ul{
     padding: 3px 5px;
@@ -73,6 +70,7 @@ input{
 input[type="number"]{
     border-radius: 5px;
     padding: 2px;
+    justify-self: flex-start;
 }
 input[type="submit"]{
     background-color: #98C9F9;
